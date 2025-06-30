@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/* ヘッダー */
+
+.header {
+  background-color: #308ce24d;
+  position: fixed;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 12px 0;
+  width: 820px;
+}
+
+.header-title {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.header-title-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-title-link:hover {
+  opacity: 0.5;
+}
+
+.header-nav {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-nav-link:hover {
+  opacity: 0.5;
+}
+
+/* キービジュアル */
+
+.keyvisual {
+  background-image: url(../img/kv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyvisual-title {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+/* サービス */
+.service-wrapper {
+  margin: 15px auto;
+  width: 820px;
+}
+
+.service-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  border: 2px solid gray;
+  padding: 15px 0;
+  width: 250px;
+  text-align: center;
+}
+
+@media screen and (max-width: 835px) {
+  .header-container {
+    max-width: 95%;
+    padding: 12px 10px;
+  }
+
+  .header-title {
+    font-size: calc(1vw + 0.5rem);
+  }
+
+  .header-nav-list {
+    gap: 40px;
+    font-size: calc(1vw + 0.5rem);
+  }
+
+  .keyvisual-title {
+    font-size: 7vw;
+  }
+
+  .service-wrapper {
+    max-width: 100%;
+  }
+
+  .service-list {
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .service-item {
+    font-size: calc(1vw + 0.5rem);
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .header-title {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+
+  .header-nav-list {
+    display: none;
+  }
+
+  .keyvisual-title {
+    font-size: 1.7rem;
+  }
+
+  .service-list {
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 10px;
+  }
+
+  .service-item {
+    font-size: 1rem;
+  }
+}
