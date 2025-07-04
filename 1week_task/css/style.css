@@ -94,7 +94,7 @@ li {
 
 .service-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -103,6 +103,27 @@ li {
   padding: 15px 0;
   width: 250px;
   text-align: center;
+}
+
+.service-item {
+  transition: background-color 1s;
+}
+.service-item-web:hover {
+  background-color: #b3ffff;
+}
+
+.service-item-seo:hover {
+  background-color: #ffdea0;
+}
+
+.service-item-app:hover {
+  background-color: #a7ff99;
+}
+
+.service-contents {
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 1px;
 }
 
 @media screen and (max-width: 835px) {
@@ -131,11 +152,15 @@ li {
   .service-list {
     justify-content: space-between;
     gap: 10px;
-    padding: 0 10px;
+    margin: 0 10px;
   }
 
   .service-item {
     font-size: calc(1vw + 0.5rem);
+  }
+
+  .service-contents {
+    margin: 10px 10px 0;
   }
 }
 

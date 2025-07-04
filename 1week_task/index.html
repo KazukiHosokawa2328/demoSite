@@ -18,7 +18,7 @@
               <a href="#" class="header-nav-link">我が社について</a>
             </li>
             <li class="header-nav-item">
-              <a href="#" class="header-nav-link">サービス</a>
+              <a href="#service" class="header-nav-link">サービス</a>
             </li>
             <li class="header-nav-item">
               <a href="#" class="header-nav-link">お問い合わせ</a>
@@ -31,16 +31,42 @@
       <div class="keyvisual">
         <h2 class="keyvisual-title">ダミーサイトへようこそ</h2>
       </div>
-      <section>
+      <section id="service">
         <div class="service-wrapper">
           <h2 class="service-title">サービス</h2>
           <ul class="service-list">
-            <li class="service-item">WEB制作</li>
-            <li class="service-item">SEOコンサル</li>
-            <li class="service-item">スマホアプリ開発</li>
+            <li href="#web" class="service-item service-item-web">WEB制作</li>
+            <li href="#seo" class="service-item service-item-seo">
+              SEOコンサル
+            </li>
+            <li href="#app" class="service-item service-item-app">
+              スマホアプリ開発
+            </li>
           </ul>
+          <div class="service-contents">
+            <p id="web" class="service-contents-web">
+              Web制作 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae sit similique incidunt? Saepe, a eius. Sed unde rerum
+              quia laudantium architecto impedit asperiores similique assumenda
+              et, totam doloribus quod magni.
+            </p>
+            <p id="seo" class="service-contents-seo">
+              SEOコンサル Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nobis iusto, perferendis dicta ducimus velit voluptate eius
+              earum incidunt ipsa maxime impedit quidem, sed laborum? Sapiente
+              eius debitis ab animi quas!
+            </p>
+            <p id="app" class="service-contents-app">
+              スマホアプリ開発 Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Molestiae tempora, assumenda error quia
+              corrupti, ratione esse numquam cupiditate enim delectus a fugiat
+              debitis. Dolore nihil quas repudiandae beatae ratione illo.
+            </p>
+          </div>
         </div>
       </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
