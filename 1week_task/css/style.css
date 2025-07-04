@@ -11,6 +11,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* ヘッダー */
 
 .header {
@@ -100,7 +105,6 @@ li {
 
 .service-item {
   border: 2px solid gray;
-  padding: 15px 0;
   width: 250px;
   text-align: center;
 }
@@ -108,6 +112,13 @@ li {
 .service-item {
   transition: background-color 1s;
 }
+
+.service-item a {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+}
+
 .service-item-web:hover {
   background-color: #b3ffff;
 }
