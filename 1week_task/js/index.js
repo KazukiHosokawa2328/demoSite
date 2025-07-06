@@ -12,5 +12,7 @@ $(function () {
     e.preventDefault();
     $(".service-contents p").hide();
     $($(this).attr("href")).show();
+    $("li.service-item").removeClass("selected");
+    $(this).parent().addClass("selected");
   });
 });

@@ -119,6 +119,18 @@ a {
   padding: 15px 0;
 }
 
+.service-item-web.selected {
+  background-color: #b3ffff;
+}
+
+.service-item-seo.selected {
+  background-color: #ffdea0;
+}
+
+.service-item-app.selected {
+  background-color: #a7ff99;
+}
+
 .service-item-web:hover {
   background-color: #b3ffff;
 }
