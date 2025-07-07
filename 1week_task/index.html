@@ -78,22 +78,50 @@
       </section>
       <!-- お問い合わせ -->
       <section class="contact">
-        <form action="" class="contact-form">
-          <div><input type="text" name="name" required /></div>
-          <div>
-            <select name="pref" id="pref" required>
-              <option value="none" selected>都道府県を選択</option>
-            </select>
-          </div>
-          <div>
-            <select name="city" id="city" required>
-              <option value="none" selected>市区町村を選択</option>
-            </select>
-          </div>
-          <div><input type="email" name="email" required /></div>
-          <div><input type="tel" name="tel" /></div>
-          <div class=""><input type="submit" value="送信" /></div>
-        </form>
+        <div class="contact-wrapper">
+          <h2 class="contact-title section-title">お問い合わせ</h2>
+          <form action="" class="contact-form">
+            <p>お名前</p>
+            <div>
+              <input
+                type="text"
+                name="name"
+                placeholder="例)田中 太郎"
+                required
+              />
+            </div>
+            <p class="name-warn"></p>
+            <p>お住まいの都道府県</p>
+            <div>
+              <select name="pref" id="pref" required>
+                <option value="none" selected>都道府県を選択</option>
+              </select>
+            </div>
+            <p class="pref-warn"></p>
+            <p>お住まいの市区町村</p>
+            <div>
+              <select name="city" id="city" required>
+                <option value="none" selected>市区町村を選択</option>
+              </select>
+            </div>
+            <p class="city-warn"></p>
+            <p>メールアドレス</p>
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="例)abcd123@example.com"
+                required
+              />
+            </div>
+            <p class="email-warn"></p>
+            <p>電話番号</p>
+            <div>
+              <input type="tel" name="tel" placeholder="例)09012345678" />
+            </div>
+            <div class=""><input type="submit" value="送信" /></div>
+          </form>
+        </div>
       </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
