@@ -76,21 +76,21 @@
           </div>
         </div>
       </section>
+      <!-- お問い合わせ -->
       <section class="contact">
         <form action="" class="contact-form">
-          <div><input type="text" name="name" /></div>
+          <div><input type="text" name="name" required /></div>
           <div>
-            <select name="pref" id="pref">
+            <select name="pref" id="pref" required>
               <option value="none" selected>都道府県を選択</option>
-              <option value=""></option>
             </select>
           </div>
           <div>
-            <select name="city" id="city">
+            <select name="city" id="city" required>
               <option value="none" selected>市区町村を選択</option>
             </select>
           </div>
-          <div><input type="email" name="email" /></div>
+          <div><input type="email" name="email" required /></div>
           <div><input type="tel" name="tel" /></div>
           <div class=""><input type="submit" value="送信" /></div>
         </form>

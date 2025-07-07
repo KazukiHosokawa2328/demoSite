@@ -15,4 +15,90 @@ $(function () {
     $("li.service-item").removeClass("selected");
     $(this).parent().addClass("selected");
   });
+
+  //お問い合わせ
+  const pref = ["北海道", "青森県", "岩手県"];
+  const cityData = {
+    北海道: [
+      "旭川市",
+      "室蘭市",
+      "釧路市",
+      "帯広市",
+      "北見市",
+      "夕張市",
+      "岩見沢市",
+      "網走市",
+      "留萌市",
+      "苫小牧市",
+      "稚内市",
+      "美唄市",
+      "芦別市",
+      "江別市",
+      "赤平市",
+      "紋別市",
+      "士別市",
+      "名寄市",
+      "三笠市",
+      "根室市",
+      "千歳市",
+      "滝川市",
+      "砂川市",
+      "歌志内市",
+      "深川市",
+      "富良野市",
+      "登別市",
+      "恵庭市",
+      "伊達市",
+      "北広島市",
+      "石狩市",
+      "北斗市",
+    ],
+    青森県: [
+      "青森市",
+      "弘前市",
+      "八戸市",
+      "黒石市",
+      "五所川原市",
+      "十和田市",
+      "三沢市",
+      "むつ市",
+      "つがる市",
+      "平川市",
+    ],
+    岩手県: [
+      "盛岡市",
+      "宮古市",
+      "大船渡市",
+      "花巻市",
+      "北上市",
+      "久慈市",
+      "遠野市",
+      "一関市",
+      "陸前高田市",
+      "釜石市",
+      "二戸市",
+      "八幡平市",
+      "奥州市",
+      "滝沢市",
+    ],
+  };
+
+  //都道府県を追加
+  pref.forEach(function (element) {
+    $("select[name='pref']").append(`<option>${element}</option>`);
+  });
+  //都道府県に対応した市を追加
+  $("select[name='pref']").on("change", function () {
+    const selectedPref = $(this).val();
+    const citySelect = $("select[name='city']");
+    citySelect.empty();
+
+    if (cityData[selectedPref]) {
+      citySelect.append('<option value="">市区町村を選択</option>');
+
+      cityData[selectedPref].forEach(function (city) {
+        citySelect.append(`<option>${city}</option>`);
+      });
+    }
+  });
 });
