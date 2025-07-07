@@ -16,6 +16,13 @@ a {
   color: black;
 }
 
+/* 共通パーツ */
+.section-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
 /* ヘッダー */
 
 .header {
@@ -85,16 +92,23 @@ a {
   font-weight: normal;
 }
 
+/* 我が社について */
+.about-text {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.about-text-em {
+  /* display: inline-block; */
+  background: linear-gradient(transparent 60%, orange 30%);
+}
+
 /* サービス */
 .service-wrapper {
   margin: 15px auto;
   width: 820px;
-}
-
-.service-title {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
 }
 
 .service-list {
