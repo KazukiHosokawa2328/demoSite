@@ -163,6 +163,8 @@ a {
   padding: 1px;
 }
 
+/* コンタクト */
+
 @media screen and (max-width: 835px) {
   .header-container {
     max-width: 95%;
