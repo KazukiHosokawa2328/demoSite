@@ -164,6 +164,24 @@ a {
 }
 
 /* コンタクト */
+.form-wrapper {
+  margin: 0 auto;
+  width: 300px;
+}
+
+form input {
+  width: 300px;
+  padding: 5px 0;
+}
+
+form select {
+  width: 300px;
+  padding: 5px 0;
+}
+
+.form-wrapper label {
+  display: inline-block;
+}
 
 @media screen and (max-width: 835px) {
   .header-container {
