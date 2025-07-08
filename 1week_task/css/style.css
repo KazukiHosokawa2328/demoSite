@@ -177,6 +177,7 @@ select {
   box-sizing: border-box;
   border: 1px solid darkgray;
   border-radius: 2px;
+  font-size: 16px;
 }
 
 .form-wrapper label {
@@ -203,6 +204,15 @@ select {
 
 .form-submit {
   margin-top: 10px;
+}
+
+/* thanksページ */
+.thanks-text {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 835px) {

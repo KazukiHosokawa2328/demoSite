@@ -94,8 +94,6 @@ $(function () {
     citySelect.empty();
 
     if (cityData[selectedPref]) {
-      citySelect.append('<option value="">市区町村を選択</option>');
-
       cityData[selectedPref].forEach(function (city) {
         citySelect.append(`<option>${city}</option>`);
       });
