@@ -99,4 +99,17 @@ $(function () {
       });
     }
   });
+
+  //ハンバーガーメニューの開閉
+  $("#js-button-drawer").on("click", function () {
+    $(this).toggleClass("active");
+    $(".drawer").slideToggle("fast");
+    $("body").toggleClass("is-fixed");
+  });
+  //ハンバーガーメニュー押下時閉じる
+  $(".header-nav-drawer").on("click", function () {
+    $(".drawer").slideUp("fast");
+    $("#js-button-drawer").removeClass("active");
+    $("body").removeClass("is-fixed");
+  });
 });
