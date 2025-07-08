@@ -20,7 +20,8 @@ a {
 .section-title {
   text-align: center;
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  margin-top: 50px;
 }
 
 /* ヘッダー */
@@ -169,18 +170,39 @@ a {
   width: 300px;
 }
 
-form input {
+form input,
+select {
   width: 300px;
   padding: 5px 0;
-}
-
-form select {
-  width: 300px;
-  padding: 5px 0;
+  box-sizing: border-box;
+  border: 1px solid darkgray;
+  border-radius: 2px;
 }
 
 .form-wrapper label {
   display: inline-block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.form-wrapper label:first-child {
+  margin-top: 0;
+}
+
+.form-required {
+  color: red;
+  font-size: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.form-optional {
+  color: gray;
+  font-size: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.form-submit {
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 835px) {
