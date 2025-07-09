@@ -17,6 +17,10 @@ a {
 }
 
 /* 共通パーツ */
+section {
+  scroll-margin-top: 53px;
+}
+
 .section-title {
   text-align: center;
   margin-bottom: 15px;
@@ -282,7 +286,7 @@ select {
   }
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 431px) {     
   .header-title {
     padding-left: 10px;
     font-size: 1rem;
@@ -339,4 +343,7 @@ select {
   .service-item {
     font-size: 1rem;
   }
+
+    section {
+      scroll-margin-top: 150px; }
 }
