@@ -284,9 +284,14 @@ select {
   .service-contents {
     margin: 10px 10px 0;
   }
+
+  .thanks-text {
+    padding: 0 5px;
+    font-size: 1.5rem;
+  }
 }
 
-@media screen and (max-width: 431px) {     
+@media screen and (max-width: 431px) {
   .header-title {
     padding-left: 10px;
     font-size: 1rem;
@@ -344,6 +349,9 @@ select {
     font-size: 1rem;
   }
 
-    section {
-      scroll-margin-top: 150px; }
+  section {
+    scroll-margin-top: 150px;
+  }
+
+  /* thanksページ */
 }
