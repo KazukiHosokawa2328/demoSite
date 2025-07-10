@@ -243,6 +243,13 @@ select {
   margin-top: 10px;
 }
 
+/* コンタクトエラーメッセージ */
+.pref-warn,
+.city-warn {
+  font-size: 0.9rem;
+  color: red;
+}
+
 /* thanksページ */
 .thanks-text {
   height: 100vh;

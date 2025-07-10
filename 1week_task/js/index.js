@@ -85,17 +85,23 @@ $(function () {
 
   //都道府県を追加
   pref.forEach(function (element) {
-    $("select[name='pref']").append(`<option>${element}</option>`);
+    $("select[name='pref']").append(
+      `<option value=${element}>${element}</option>`
+    );
   });
   //都道府県に対応した市を追加
   $("select[name='pref']").on("change", function () {
+    $(".pref-warn").hide();
+    $(".city-warn").hide();
     const selectedPref = $(this).val();
     const citySelect = $("select[name='city']");
-    citySelect.empty();
+    citySelect
+      .empty()
+      .append('<option value="city-none" selected disabled>---</option>');
 
     if (cityData[selectedPref]) {
       cityData[selectedPref].forEach(function (city) {
-        citySelect.append(`<option>${city}</option>`);
+        citySelect.append(`<option value=${city}>${city}</option>`);
       });
     }
   });
@@ -111,5 +117,27 @@ $(function () {
     $(".drawer").slideUp("fast");
     $("#js-button-drawer").removeClass("active");
     $("body").removeClass("is-fixed");
+  });
+
+  //セレクトにval空なら送信させない＆エラーメッセージ出す
+  $(".pref-warn, .city-warn").hide();
+
+  $("form").submit(function () {
+    let sendFrag = true;
+    if ($("select[name='pref']").val() === "pref-none") {
+      $(".pref-warn").show();
+      sendFrag = false;
+    } else {
+      $(".pref-warn").hide();
+    }
+    if ($("select[name='city']").val() === "city-none") {
+      $(".city-warn").show();
+      sendFrag = false;
+    } else {
+      $(".city-warn").hide();
+    }
+    if (sendFrag == false) {
+      return false;
+    }
   });
 });
