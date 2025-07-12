@@ -120,24 +120,24 @@ $(function () {
   });
 
   //セレクトにval空なら送信させない＆エラーメッセージ出す
-  $(".pref-warn, .city-warn").hide();
+  // $(".pref-warn, .city-warn").hide();
 
-  $("form").submit(function () {
-    let sendFrag = true;
-    if ($("select[name='pref']").val() === "pref-none") {
-      $(".pref-warn").show();
-      sendFrag = false;
-    } else {
-      $(".pref-warn").hide();
-    }
-    if ($("select[name='city']").val() === "city-none") {
-      $(".city-warn").show();
-      sendFrag = false;
-    } else {
-      $(".city-warn").hide();
-    }
-    if (sendFrag == false) {
-      return false;
-    }
-  });
+  // $("form").submit(function () {
+  //   let sendFrag = true;
+  //   if ($("select[name='pref']").val() === "pref-none") {
+  //     $(".pref-warn").show();
+  //     sendFrag = false;
+  //   } else {
+  //     $(".pref-warn").hide();
+  //   }
+  //   if ($("select[name='city']").val() === "city-none") {
+  //     $(".city-warn").show();
+  //     sendFrag = false;
+  //   } else {
+  //     $(".city-warn").hide();
+  //   }
+  //   if (sendFrag == false) {
+  //     return false;
+  //   }
+  // });
 });

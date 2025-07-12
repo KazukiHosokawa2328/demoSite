@@ -131,10 +131,10 @@
               >
 
               <select name="pref" id="pref" required>
-                <option value="pref-none" selected>---</option>
+                <option value="" selected disabled hidden>---</option>
               </select>
 
-              <p class="pref-warn">お住まいの都道府県を選択してください。</p>
+              <!-- <p class="pref-warn">お住まいの都道府県を選択してください。</p> -->
               <label for="city"
                 >お住まいの市区町村<span class="form-required"
                   >*必須</span
@@ -142,10 +142,10 @@
               >
 
               <select name="city" id="city" required>
-                <option value="city-none" selected>---</option>
+                <option value="" selected disabled hidden>---</option>
               </select>
 
-              <p class="city-warn">お住まいの市区町村を選択してください。</p>
+              <!-- <p class="city-warn">お住まいの市区町村を選択してください。</p> -->
               <label for="email"
                 >メールアドレス<span class="form-required">*必須</span></label
               >
@@ -167,6 +167,8 @@
                 type="tel"
                 name="tel"
                 placeholder="例)09012345678"
+                pattern="^[0-9]{10,11}$"
+                maxlength="11"
               />
               <div class="form-submit">
                 <input type="submit" value="送信" />
