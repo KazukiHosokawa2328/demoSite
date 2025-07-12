@@ -97,7 +97,7 @@ $(function () {
     const citySelect = $("select[name='city']");
     citySelect
       .empty()
-      .append('<option value="city-none" selected disabled>---</option>');
+      .append('<option value="" selected disabled>---</option>');
 
     if (cityData[selectedPref]) {
       cityData[selectedPref].forEach(function (city) {
